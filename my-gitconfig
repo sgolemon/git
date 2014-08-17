@@ -6,8 +6,8 @@
 	cac  = commit    --amend -C HEAD
 	caac = commit -a --amend -C HEAD
 	show-files = show --pretty=\"format:%h %s\\\n\" --name-only
-	prep = !sh -c '([ -z "$1" ] || git checkout $1) && git fetch origin master && git rebase origin/master' -
-	new = !sh -c '[ -z "$1" ] || (git fetch origin master && git checkout -b $1 origin/master)' -
+	prep = !sh -c '([ -z "$1" ] || git checkout $1) && git fetch origin && git rebase origin/master' -
+	new = !sh -c '[ -z "$1" ] || (git fetch origin && git checkout -b $1 origin/master)' -
 	lom = log origin/master..
 	lomo = log origin/master.. --oneline
 	lo = log --oneline
