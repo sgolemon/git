@@ -1,5 +1,7 @@
 [color]
 	ui = auto
+[core]
+	pager = less -SRFX
 [alias]
 	ca   = commit    --amend
 	caa  = commit -a --amend
